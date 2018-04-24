@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MenuLayout">
+
+        <!--  悬浮按钮动画时的旋转方向-->
+        <attr name="fab_rotation_direction" format="integer">
+            <!--  顺时针-->
+            <enum name="cw" value="1"/>
+            <!-- 逆时针 -->
+            <enum name="ncw" value="2"/>
+
+        </attr>
+        <!-- 悬浮按钮离右下的间距 -->
+        <attr name="fab_Size" format="dimension"/>
+        <attr name="fab_margin_right" format="dimension"/>
+        <attr name="fab_margin_buttom" format="dimension"/>
+
+        <!--  弹出的悬浮按钮大小-->
+        <attr name="popup_fab_size" format="dimension"/>
+
+        <!--   弹出的每个悬浮按钮或者图片之间的间距-->
+        <attr name="popup_fab_margin" format="dimension"/>
+        <!-- 是否显示文字-->
+        <attr name="show_text" format="boolean"/>
+        <!-- 是否显示文字背景-->
+        <attr name="show_text_bg" format="boolean"/>
+        <!-- 显示文本的文字大小 -->
+        <attr name="textSize" format="dimension"/>
+        <!-- 显示文本的颜色 -->
+        <attr name="textColor" format="color"/>
+        <!-- 显示文本背景色颜色 -->
+        <attr name="text_bg_color" format="color"/>
+
+        <!-- 是否显示图片背景-->
+        <attr name="show_image_bg" format="boolean"/>
+
+        <!-- 图片背景颜色-->
+        <attr name="image_bg_color" format="color"/>
+
+        <!-- 文字和图片之间的间隙 -->
+
+        <attr name="text_image_maragin" format="dimension"/>
+
+
+    </declare-styleable>
+</resources>
