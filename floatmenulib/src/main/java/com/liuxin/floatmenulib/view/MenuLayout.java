@@ -179,7 +179,6 @@ public class MenuLayout extends RelativeLayout {
 
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
-        super.onMeasure(widthMeasureSpec, heightMeasureSpec);
         int HeightMode = MeasureSpec.getMode(heightMeasureSpec);
         /**
          * 高不支持wrap_content,强制为match_parent
@@ -187,6 +186,8 @@ public class MenuLayout extends RelativeLayout {
         if (HeightMode == MeasureSpec.AT_MOST) {
             int HeightSize = MeasureSpec.getSize(heightMeasureSpec);
             heightMeasureSpec = MeasureSpec.makeMeasureSpec(HeightSize, MeasureSpec.EXACTLY);
+            super.onMeasure(widthMeasureSpec, heightMeasureSpec);
+        }else {
             super.onMeasure(widthMeasureSpec, heightMeasureSpec);
         }
     }
